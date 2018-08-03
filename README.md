@@ -1,6 +1,6 @@
 # fomaJNI
 
-Copyright 2018 by [Damir Cavar](http://damir.cavar.me/) <dcavar@indiana.edu>
+Copyright 2018 by [Damir Cavar](http://damir.cavar.me/)
 
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
