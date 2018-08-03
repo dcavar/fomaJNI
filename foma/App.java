@@ -2,6 +2,9 @@
  * App.java
  * (C) 2018 by Damir Cavar <dcavar@indiana.edu>
  *
+ * Date: 08/03/2018
+ * Version: 0.1
+ *
  * This is the Java component of the JNI C++ interface to the FomaWrapper class and
  * the Foma library.
  *
@@ -25,9 +28,9 @@ public class App {
 	private long ptr_; // class pointer to net
 
 	private native long getFST(String fname); // returns a net pointer
-	
+
 	private native void destroyFST(long ptr); // calls fsm_destroy on net pointer
-	
+
 	private static native String[] applyUp(long ptr, String token);
 
 	private static native String[] applyDown(long ptr, String token);
@@ -43,12 +46,12 @@ public class App {
 	protected void finalize() throws Throwable {
 		destroy();
 	}
-	
+
 	public void destroy() {
 		System.out.println(ptr_);
 		destroyFST(ptr_);
 	}
-	
+
 	public String[] getAnalysisUp(String token) {
 		String[] res = applyUp(ptr_, token);
 		return res;

@@ -2,6 +2,7 @@
  * File: FomaWrapper.h
  * Author: Damir Cavar
  * Date: 08/02/2018
+ * Version: 0.1
  * Purpose:
  * Wrap the foma lib functions in a C++ class to communicate via JNI to Java.
  *
@@ -36,4 +37,3 @@ public:
     vector<string> applyDown(string);
     vector<string> apply(string, bool up);
 };
-

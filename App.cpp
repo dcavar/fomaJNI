@@ -2,6 +2,9 @@
  * App.cpp
  * (C) 2018 by Damir Cavar <dcavar@indiana.edu>
  *
+ * Date: 08/03/2018
+ * Version: 0.1
+ *
  * This is the C++ interface between JNI and the FomaWrapper class and library.
  *
  * The morphological analyzer Foma takes a string and returns n strings. Since it is
@@ -78,4 +81,3 @@ JNIEXPORT jobjectArray JNICALL Java_foma_App_applyDown(JNIEnv *env, jclass obj, 
 	}
 	return (ret);
 }
-

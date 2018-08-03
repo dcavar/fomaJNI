@@ -2,6 +2,7 @@
  * File: test.c
  * Author: Damir Cavar
  * Date: 08/02/2018
+ * Version: 0.1
  * Purpose:
  *
  * This is a tester for FomaWrapper.
