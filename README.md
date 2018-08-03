@@ -51,13 +51,13 @@ To generate the header and class file, assuming you use Java 8 or newer:
 
 Then check App.c and run on Mac:
 
-  g++ -fPIC -I"$JAVA_HOME/include" -I"$JAVA_HOME/include/darwin" -dynamiclib -o libfomaJNI.dylib App.cpp FomaWrapper.cpp
+   g++ -fPIC -I"$JAVA_HOME/include" -I"$JAVA_HOME/include/darwin" -dynamiclib -o libfomaJNI.dylib App.cpp FomaWrapper.cpp
 
 On Linux do this:
 
-  g++ -fPIC -I"$JAVA_HOME/include" -I"$JAVA_HOME/include/linux" -shared -o libfomaJNI.so App.cpp FomaWrapper.cpp
+   g++ -fPIC -I"$JAVA_HOME/include" -I"$JAVA_HOME/include/linux" -shared -o libfomaJNI.so App.cpp FomaWrapper.cpp
 
 Run the app now with:
 
-  java -Djava.library.path=. foma.App
+   java -Djava.library.path=. foma.App
 
