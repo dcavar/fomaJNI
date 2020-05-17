@@ -16,7 +16,7 @@ file(GLOB ALL_MY_SRC
 
 include_directories(/usr/local/include)
 include_directories($ENV{JAVA_HOME}/include)
-include_directories($ENV{JAVA_HOME}/include/darwin)
+include_directories($ENV{JAVA_HOME}/include/darwin) # exchange 'darwin' by your operating system
 link_directories(/usr/local/lib)
 set(CMAKE_CONFIGURATION_TYPES "Debug" CACHE STRING "" FORCE)
 
